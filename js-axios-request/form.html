@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Star Wars API</title>
+</head>
+
+<body>
+    <form class="sm-form form-inline offset-4 col-6 mt-2" id="form-request" onsubmit="searchCharacter()" method="POST">
+        <div class="form-group">
+            <input class="form-control mr-3" type="text" name="character-id" id="character-id" placeholder="Inform character's id" aria-label="Search" required>
+        </div>
+        <button type="submit" class="btn btn-dark float-right">Search Character</button>
+    </form>
+    <div class="card text-white bg-info offset-4 col-4 mt-5" id="character-info" style="width: 50rem;" hidden>
+        <div class="card-body">
+            <div class="card-text">
+                <p id="character-name"></p>
+                <p id="character-birth-year"></p>
+                <p id="character-film"></p>
+                <p id="character-homeworld"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
